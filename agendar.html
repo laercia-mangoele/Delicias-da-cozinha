@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Receita e Contratar Chef</title>
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/agendar.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">Delícias na Cozinha</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <button id="theme-toggle" class="bx bxs-moon"></button>
+        <ul class="navbar">
+            <li><a href="index.html#home">Início</a></li>
+            <li><a href="index.html#services">Serviços</a></li>
+            <li><a href="index.html#chefs">Chefs</a></li>
+            <li><a href="index.html#contact">Contactos</a></li>
+        </ul>
+    </header>
+<main>
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="heading">
+            <h2>Contrate um Chef</h2>
+        </div>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu E-mail..." required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Seu telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-date">Data do Evento:</label>
+                    <input type="date" id="event-date" name="event-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-time">Hora do Evento:</label>
+                    <input type="time" id="event-time" name="event-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="recipe">Selecione a Receita:</label>
+                    <select id="recipe" name="recipe" required>
+                        <option value="">Escolha uma receita</option>
+                        <option value="risoto_cogumelos">Risoto de Cogumelos</option>
+                        <option value="frango_zambeziano">Frango à Zambeziano</option>
+                        <option value="pave_morango">Pavê de Morango</option>
+                        <option value="mousse_chocolate">Mousse de Chocolate</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="chef">Selecione o Chef:</label>
+                    <select id="chef" name="chef" required>
+                        <option value="">Escolha um chef</option>
+                        <option value="elisio_mutexa">Elisio Mutexa</option>
+                        <option value="laercia_mangoele">Laércia Mangoele</option>
+                        <option value="edson">Edson</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem Adicional:</label>
+                    <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+                <button type="submit" class="schedule-button">Agendar</button>
+            </form>
+        </div>
+    </section>
+  </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div>
+                <h3>Sobre Nós</h3>
+                <p>Somos uma equipa qualificada para trazer as melhores iguarias para sua mesa.</p>
+                <div class="redes-sociais">
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                </div>
+            </div>
+            <div>
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#chefs">Chefs</a></li>
+                    <li><a href="#contact">Contactos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contactos</h3>
+                <p>+123 456 789</p>
+                <p>info@deliciasnacozinha.com</p>
+                <p>Tete-Chingodzi</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Link to JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
